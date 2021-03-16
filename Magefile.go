@@ -116,6 +116,7 @@ type Frontend mg.Namespace
 func (Frontend) Build() error {
 	err := run("yarn", "install")
 	if err == nil {
+		//               err = run("npx", "@grafana/toolkit", "plugin:build", "--preserveConsole")
 		err = run("npx", "@grafana/toolkit", "plugin:build")
 	}
 	return err

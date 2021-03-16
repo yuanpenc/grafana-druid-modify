@@ -2,7 +2,7 @@ import React, { FC, PureComponent, ChangeEvent } from 'react';
 import { css } from 'emotion';
 import uniqueId from 'lodash/uniqueId';
 import { LegacyForms, Checkbox, Button, Icon, stylesFactory } from '@grafana/ui';
-import { QueryBuilderProps } from '../types';
+import { QueryBuilderComponentProps } from '../abstract';
 
 interface Entry {
   id: string;
@@ -72,7 +72,7 @@ const EntryRow: FC<EntryRowProps> = ({ entry, onBlur, onChange, onRemove }: Entr
 
 EntryRow.displayName = 'EntryRow';
 
-export class Map extends PureComponent<QueryBuilderProps, State> {
+export class Map extends PureComponent<QueryBuilderComponentProps, State> {
   state: State = {
     entries: [],
   };
