@@ -125,6 +125,7 @@ services:
     user: root
     volumes:
       - ../dist:/var/lib/grafana/plugins/druid-grafana
+      - ../alexandra-trackmap-panel/dist:/var/lib/grafana/plugins/alexandra-trackmap-panel
       - ./grafana/dashboards:/etc/grafana/dashboards
       - ./grafana/provisioning:/etc/grafana/provisioning
     depends_on:

@@ -1,0 +1,3 @@
+[submodule "alexandra-trackmap-panel"]
+	path = alexandra-trackmap-panel
+	url = https://github.com/jbguerraz/alexandra-trackmap-panel.git
