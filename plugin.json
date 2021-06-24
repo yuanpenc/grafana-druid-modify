@@ -1,0 +1,44 @@
+{
+  "type": "datasource",
+  "name": "Druid",
+  "id": "grafadruid-druid-datasource",
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+  "logs": true,
+  "executable": "grafadruid-druid-datasource",
+  "info": {
+    "description": "Connects Grafana to Druid",
+    "author": {
+      "name": "Grafadruid"
+    },
+    "keywords": ["druid"],
+    "logos": {
+      "small": "img/druid.svg",
+      "large": "img/druid.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafadruid/druid-grafana"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafadruid/druid-grafana/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [
+      { "name": "datasource", "path": "img/screenshot-datasource.png" },
+      { "name": "panels", "path": "img/screenshot-panels.png" },
+      { "name": "query builder", "path": "img/screenshot-querybuilder.png" },
+      { "name": "variables", "path": "img/screenshot-variables.png" }
+    ],
+    "version": "1.1.0",
+    "updated": "2021-05-11"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=7.0.0",
+    "grafanaVersion": "7.x.x",
+    "plugins": []
+  }
+}
